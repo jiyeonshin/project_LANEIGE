@@ -449,6 +449,7 @@ header {
     max-width: 1540px;
     height: 392px;
     position: relative;
+    margin: 0 auto;
 }
 
 .event_section .event_wrap h2.event_tit{
@@ -581,7 +582,341 @@ header {
 /*======================================================================================*/
 
 /*sparkling beauty 시작*/
+.sparkling_section{
+    width: 100%;
+    max-width: 1600px;
+    height: 570px;
+}
+
+.sparkling_section .sparkling_wrap{
+    width: 100%;
+    max-width: 1540px;
+    height: 430px;
+    margin: 0 auto;
+    
+    position: relative;
+}
+
+.sparkling_section .sparkling_wrap h2.sparkling_tit{
+    height: 39px;
+}
+
+.sparkling_section .sparkling_wrap .sparkling_container{
+    width: 100%;
+    max-width: 1540px;
+    height: 376px;
+    
+}
+
+.main_banner{
+    width: 100%;
+    max-width: 340px;
+    height: 376px;
+    background: url(../img/spakling_beauty/sparkling-titbg.jpg) no-repeat 50%;
+    position: relative;
+}
+
+
+.main_banner p.main_banner_tit{
+    width: 100%;
+    max-width: 280px;
+    height: 147px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 0 0 20px;
+    box-sizing: border-box;
+}
+
+.main_banner p.main_banner_tit span{
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    height: 54px;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.sparkling_cardbox{
+    width: 100%;
+    max-width: 1540px;
+    height: 376px;
+    position: absolute;
+    top: 39px;
+    left: 0;
+}
+
+.sparkling_cardbox .sparkling_cardline.line1{
+    width: 100%;
+    max-width: 1190px;
+    height: 198px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    background: url(../img/spakling_beauty/sparkling-thumb-bgright.gif) right top no-repeat;
+}
+
+
+.sparkling_cardbox .sparkling_cardline.line2{
+    width: 100%;
+    max-width: 1190px;
+    height: 178px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: url(../img/spakling_beauty/sparkling-thumb-bgleft.gif) left top no-repeat;
+}
+
+
+.sparkling_cardline .sparkling_imgbox.line_1_img{
+    width: 16.66%;
+    float: left;    
+    
+    
+}
+
+
+.sparkling_cardline .sparkling_imgbox.line_2_img{
+    width: 16.66%;
+    float: right;    
+    
+    
+    
+}
+.sparkling_cardline .sparkling_imgbox img{
+    width: 100%;
+    max-width: 178.25px;
+    height: 178.25px;
+}
 /*sparkling beauty 끝*/
+
+/*=====================================================================================*/
+
+/*kbeauty 시작*/
+.kbeauty_section{
+    width: 100%;
+    max-width: 1600px;
+    height: 642px;
+    
+}
+
+.kbeauty_section .kbeauty_wrap{
+    width: 100%;
+    max-width: 1540px;
+    height: 502px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.kbeauty_section .kbeauty_wrap .kbeauty_tit{
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    
+    background: url(../img/school_of_k_beauty/kbeauty-titbg.png) no-repeat;
+}
+
+
+.kbeauty_container{
+    width: 100%;
+    max-width: 1540px;
+    height: 442px;
+}
+
+.kbeauty_container .main_view{
+    width: 100%;
+    max-width: 770px;
+    height: 442px;
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+    padding: 0 20px 0 60px;
+    box-sizing: border-box;
+    z-index: -1;
+}
+
+.kbeauty_container .main_view p.main_view_box{
+    width: 100%;
+    max-width: 600px;
+    height: 442px;
+}
+.kbeauty_container .main_view p.main_view_box a{
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: 442px;
+    border: 2px solid;
+    box-sizing: border-box;
+    
+
+}
+
+.kbeauty_container .main_view p.main_view_box a img.video_img{
+    width: 100%;
+    max-width: 600px;
+    height: 442px;
+    
+}
+
+.kbeauty_container .main_view p.main_view_box a span.video_play{
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: 442px;    
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+a span.video_play img{
+    position: absolute;
+    top: 42%;
+    left: 42%;
+    
+}
+
+.kbeauty_content_wrap{
+    width: 100%;
+    max-width: 770px;
+    height: 442px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+
+.kbeauty_content_wrap .kbeauty_conbox{
+    width: 100%;
+    max-width: 750px;
+    height: 168px;
+}
+
+.kbeauty_content_wrap .kbeauty_conbox strong.main_tit{
+    display: block;
+    width: 100%;
+    max-width: 750px;
+    height: 71px;
+    font-size: 38px;
+    letter-spacing: -2px;
+    
+    padding: 7px 0 15px 0;
+    
+    
+}
+
+.kbeauty_content_wrap .kbeauty_conbox p.k_des{
+    width: 100%;
+    max-width: 750px;
+    height: 61px;
+    padding-bottom: 25px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.kbeauty_content_wrap .kbeauty_conbox a.view{
+    display: block;
+    width: 100%;
+    max-width: 160px;
+    height: 36px;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.kbeauty_content_wrap .kbeauty_related{
+    width: 100%;
+    max-width: 770px;
+    height: 207px;
+    
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.kbeauty_content_wrap .kbeauty_related .related_wrap{
+    
+}
+
+.kbeauty_content_wrap .kbeauty_related strong.related_tit{
+    display: block;
+    width: 100%;
+    max-width: 120px;
+    height: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background: url(../img/school_of_k_beauty/kbeauty-relatied-titbg.gif) no-repeat right;
+}
+
+.related_wrap{
+    width: 100%;
+    max-width: 750px;
+    height: 177px;
+    
+    
+    
+}
+
+.related_wrap .related_thumb{
+    width: 100%;
+    max-width: 187.5px;
+    height: 167px;
+    
+    position: relative;
+    float: left;
+    
+}
+
+.related_wrap .related_thumb a.thumb{
+    display: block;
+    width: 100%;
+    max-width: 177.5px;
+    height: 167px;
+    margin: 0 auto;
+    
+    
+}
+
+.related_wrap .related_thumb a.thumb p.thumbBox{
+    width: 100%;
+    max-width: 177.5px;
+    height: 167px;
+    margin: 0 auto;
+}
+
+a.thumb p.thumbBox img.thumbBox_img{
+    width: 100%;
+    max-width: 173px;
+    height: 127.31px;
+    
+    background: #00f;
+}
+
+a.thumb p.thumbBox span img.play_btn{
+    display: block;
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    top: 25%;
+    left: 37%;
+}
+
+a.thumb p.thumbTxt{
+    width: 100%;
+    max-width: 173px;
+    height: 40px;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+/*kbeauty 끝*/
+
+/*=====================================================================================*/
 
 /*main 끝*/
 
