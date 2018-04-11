@@ -1,0 +1,644 @@
+@charset "utf-8";
+
+#wrap {
+    width: 100%;
+    height: auto;
+    border: 1px solid;
+    box-sizing: border-box;
+}
+
+/*header 시작*/
+
+header {
+    width: 100%;
+    height: 130px;
+    background: #ff0;
+    font-size: 50px;
+    line-height: 130px;
+    text-align: center;
+}
+
+/*header 끝*/
+
+/*main 시작*/
+
+/*main gallery시작*/
+
+.container {
+    width: 100%;
+    height: auto;
+}
+
+
+.container .mainContent {
+    width: 100%;
+    max-width: 1600px;
+
+    margin: 0 auto;
+
+}
+
+.container .mainContent .galleryContents {
+
+    width: 100%;
+    max-width: 1540px;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: 0;
+
+}
+
+/*UISlider 시작*/
+
+.UISlider_container {
+    overflow: hidden;
+}
+
+
+.UISlider_container .UISlider_content {
+    width: 600%;
+    max-height: 649.11px;
+
+    position: relative;
+    top: 0;
+    left: 0;
+
+}
+
+.UISlider_container .UISlider_content .UISlider_item {
+    margin: 0 auto;
+
+}
+
+.UISlider_container .UISlider_content .UISlider_item ul li {
+    width: 100%;
+    max-width: 1540px;
+    height: 100%;
+    max-height: 650px;
+    float: left;
+
+}
+
+
+.UISlider_box .slider_box .slider_itemtxt {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 120px 154px;
+    box-sizing: border-box;
+
+}
+
+.UISlider_box .slider_box .slider_itemtxt p.tit {
+    font-size: 40px;
+    padding-bottom: 15px;
+
+}
+
+.UISlider_box .slider_box .slider_itemtxt p.des {
+    font-size: 20px;
+}
+
+
+/*UISlider 끝*/
+
+/*슬라이드 버튼 시작*/
+
+.gnb_kv {
+
+    width: 100%;
+    height: 28px;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+}
+
+.gnb_kv .play_btn .play {
+
+    width: 29px;
+    height: 28px;
+    background: url(../img/main_kv_banner/slider-controller-play.png) no-repeat 50%;
+    position: absolute;
+    top: 0;
+    left: 48%;
+    display: none;
+}
+
+.gnb_kv .play_btn .stop {
+    width: 29px;
+    height: 28px;
+    background: url(../img/main_kv_banner/slider-controller-stop.png) no-repeat 50%;
+    position: absolute;
+    top: 0;
+    left: 48%;
+}
+
+.gnb_kv .gnb_btn {
+    margin: 0 auto;
+    width: 179px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+
+}
+
+.gnb_kv .gnb_btn ul li {
+    margin: 0 auto;
+    float: left;
+    width: 29px;
+    height: 15px;
+    background: url(../img/main_kv_banner/slider-pager-normal-shadow.png) no-repeat;
+
+}
+
+/*슬라이드 버튼 끝*/
+
+/*화살표 버튼 시작*/
+
+.arrow_kv .leftArrow {
+    width: 60px;
+    height: 60px;
+    background: url(../img/arrow/visual-arrow-left.png) no-repeat 50%;
+    position: absolute;
+    top: 300px;
+    left: 15px;
+}
+
+.arrow_kv .rightArrow {
+    width: 60px;
+    height: 60px;
+    background: url(../img/arrow/visual-arrow-right.png) no-repeat 50%;
+    position: absolute;
+    top: 300px;
+    right: 15px;
+}
+
+/*화살표 버튼 끝*/
+
+/*main gallery 끝*/
+
+/*category section 시작*/
+
+.category_section {
+
+    width: 100%;
+    max-width: 1600px;
+    height: 219px;
+
+}
+
+.category_section .custom_main_box {
+    width: 25%;
+    height: 59px;
+
+    float: left;
+
+    position: relative;
+    top: 80px;
+
+}
+
+.category_section .custom_main_box a {
+    display: block;
+    width: 340px;
+    height: 59px;
+
+    margin: 0 auto;
+
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+
+
+}
+
+.category_section .custom_main_box a.img1 {
+    background: url(../img/banner_bg/banner-bg01.jpg) no-repeat right;
+    border-color: #3fbef3;
+}
+
+.category_section .custom_main_box a.img2 {
+    background: url(../img/banner_bg/banner-bg02.jpg) no-repeat right;
+    border-color: #ff94b7;
+}
+
+.category_section .custom_main_box a.img3 {
+    background: url(../img/banner_bg/banner-bg03.jpg) no-repeat right;
+    border-color: #668be0;
+}
+
+.category_section .custom_main_box a.img4 {
+    background: url(../img/banner_bg/banner-bg05.jpg) no-repeat right;
+    border-color: #a5a5a5;
+}
+
+
+
+.category_section .custom_main_box a span {
+    display: block;
+    width: 97.55px;
+    height: 24px;
+    padding-left: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 17.5px;
+    left: 30px;
+}
+
+
+/*category section 끝*/
+
+/*bestseller section 시작*/
+
+.bestseller_section {
+    width: 100%;
+    max-width: 1600px;
+    height: 834px;
+
+
+}
+
+.bestseller_section .bestseller_wrap {
+    width: 100%;
+    max-width: 1540px;
+    height: 734px;
+    margin: 0 auto;
+}
+
+.bestseller_section .bestseller_wrap h2.bst_tit {
+    height: 54px;
+}
+
+.bestseller_section .bestseller_wrap .bestseller_container {
+    width: 100%;
+    max-width: 1540px;
+    height: 680px;
+
+}
+
+
+/*베스트셀러 제품 이미지 버튼 시작*/
+
+.bst_product {
+    width: 100%;
+    height: 270px;
+
+}
+
+.bst_product button {
+    width: 308px;
+    height: 270px;
+    background: transparent;
+    border-color: transparent;
+    float: left;
+}
+
+.bst_product button span.product_box {
+    display: block;
+    width: 308px;
+    height: 220px;
+    float: left;
+
+}
+
+.bst_product button span.product_box img {
+    width: 180px;
+    height: 180px;
+
+}
+
+
+.bst_product button span.product_box span.product_txt {
+    display: block;
+    width: 308px;
+    height: 40px;
+}
+
+/*베스트셀러 제품 이미지 버튼 끝*/
+
+/*베스트셀러 이미지 슬라이드 시작*/
+
+.bst_sliderWrap {
+    width: 100%;
+    max-width: 1540px;
+    height: 380px;
+    margin: 0 auto;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/*베스트셀러 화살표 버튼 시작*/
+
+.bst_arrow .leftArrow {
+    width: 60px;
+    height: 60px;
+    background: url(../img/arrow/visual-arrow-left.png) no-repeat 50%;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    z-index: 9;
+}
+
+.bst_arrow .rightArrow {
+    width: 60px;
+    height: 60px;
+    background: url(../img/arrow/visual-arrow-right.png) no-repeat 50%;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    z-index: 9;
+}
+
+/*베스트셀러 화살표 버튼 끝*/
+
+/*베스트셀러 슬라이드 버튼 시작*/
+
+.bst_gnb {
+
+    width: 100%;
+    height: 28px;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    z-index: 9;
+}
+
+.bst_gnb .play_btn .play {
+
+    width: 29px;
+    height: 28px;
+    background: url(../img/main_kv_banner/slider-controller-play.png) no-repeat 50%;
+    position: absolute;
+    top: 0;
+    left: 48%;
+    display: none;
+}
+
+.bst_gnb .play_btn .stop {
+    width: 29px;
+    height: 28px;
+    background: url(../img/main_kv_banner/slider-controller-stop.png) no-repeat 50%;
+    position: absolute;
+    top: 0;
+    left: 48%;
+}
+
+.bst_gnb .gnb_btn {
+    margin: 0 auto;
+    width: 179px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+
+}
+
+.bst_gnb .gnb_btn ul li {
+    margin: 0 auto;
+    float: left;
+    width: 29px;
+    height: 15px;
+    background: url(../img/main_kv_banner/slider-pager-normal-shadow.png) no-repeat;
+
+}
+
+/*베스트셀러 슬라이드 버튼 끝*/
+
+/*베스트셀러 슬라이드 시작*/
+
+.bst_slider {
+    width: 500%;
+
+    height: 380px;
+
+    position: relative;
+
+}
+
+.bst_slider ul li {
+    float: left;
+}
+
+.bst_slider ul li img {
+    margin: 0 auto;
+}
+
+.bst_slider ul li .bst_itemTxt {
+    width: 100%;
+    max-width: 1540px;
+    height: 176px;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -90px;
+}
+
+.bst_slider ul li .bst_itemTxt p.itemBox {
+    width: 30%;
+    height: 146px;
+    margin: 0 auto;
+    border: 1px solid;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.bst_slider ul li .bst_itemTxt p.itemBox span.itembox_border {
+    display: block;
+    width: 434px;
+    height: 118px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+/*베스트셀러 슬라이드 끝*/
+
+/*베스트셀러 이미지 슬라이드 끝*/
+
+/*bestseller section 끝*/
+
+/*event 시작*/
+
+.event_section {
+    width: 100%;
+    max-width: 1600px;
+    height: 532px;
+    border: 10px solid;
+}
+
+.event_section .event_wrap .event_slider{
+    width: 100%;
+    max-width: 1540px;
+    height: 392px;
+    
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.event_section .event_wrap h2.event_tit {
+    height: 39px;
+}
+
+
+/*이벤트 슬라이드 버튼 시작*/
+.event_slider .event_UISlider {
+    width: 100%;
+    max-width: 765px;
+    height: 28px;
+    position: absolute;
+    bottom: 50px;
+    
+}
+
+.event_gnb .play_btn .play {
+    width: 29px;
+    height: 28px;
+    background: url(../img/main_kv_banner/slider-controller-play.png) no-repeat 50%;
+    position: absolute;
+    top: 0;
+    left: 45%;
+    display: none;
+}
+
+
+.event_gnb .play_btn .stop {
+    width: 29px;
+    height: 28px;
+    background: url(../img/main_kv_banner/slider-controller-stop.png) no-repeat 50%;
+    position: absolute;
+    top: 0;
+    left: 45%;
+}
+
+.event_gnb .event_btn {
+    margin: 0 auto;
+    width: 179px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+}
+
+.event_gnb .event_btn ul li {
+    margin: 0 auto;
+    float: left;
+    width: 29px;
+    height: 15px;
+    background: url(../img/main_kv_banner/slider-pager-normal-shadow.png) no-repeat;
+}
+
+/*이벤트 슬라이드 버튼 끝*/
+
+.event_container{
+    width: 100%;
+    max-width: 756px;
+    height: 353px;
+    
+    border: 3px solid #f00;
+}
+
+.event_content .event_item ul li .event_box{
+    width: 100%;
+    max-width: 756px;
+    height: 353px;
+    
+}
+
+.event_item ul li .event_box .event_itemTxt{
+    width: 100%;
+    max-width: 756px;
+    height: 353px;
+    padding: 40px 60px;
+}
+
+.event_box .event_itemTxt p.tit{
+    width: 645px;
+    height: 54px;
+}
+
+.event_box .event_img{
+    width: 756px;
+    height: 353px;
+    border: 3px solid #0ff;
+}
+/*event 끝*/
+
+/*sparkling beauty 시작*/
+
+.sparkling_section {
+    width: 1600px;
+    height: 570px;
+    border: 3px solid;
+    box-sizing: border-box;
+}
+
+.sparkling_section .sparkling_wrap {
+    width: 1540px;
+    height: 430px;
+    margin: 0 auto;
+}
+
+
+.sparkling_section .sparkling_wrap .sparkling_cardboard {
+    width: 100%;
+    height: 376px;
+    border: 4px #f00;
+    background: #555;
+    position: relative;
+
+
+}
+
+.sparkling_wrap .sparkling_cardboard .sparkling_banner {
+    width: 340px;
+    height: 376px;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.sparkling_section .sparkling_wrap .sparkling_cardboard .line {
+    width: 1190px;
+    height: 198px;
+    background: tomato;
+    position: absolute;
+    right: 0;
+
+}
+
+.sparkling_section .sparkling_wrap .sparkling_cardboard .line.cardboard_line1 {
+    top: 0;
+}
+
+.sparkling_section .sparkling_wrap .sparkling_cardboard .line.cardboard_line1 img {
+    display: block;
+    width: 178.25px;
+    height: 178.25px;
+    border: 2px solid;
+    float: left;
+}
+
+.sparkling_section .sparkling_wrap .sparkling_cardboard .line.cardboard_line2 {
+    bottom: 0;
+}
+
+/*sparkling beauty 끝*/
+
+/*main 끝*/
+
+/*footer 시작*/
+
+footer {
+    width: 100%;
+    height: 150px;
+    background: #555;
+}
+
+/*footer 끝*/
