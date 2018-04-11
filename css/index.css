@@ -715,14 +715,29 @@ header {
     max-width: 200px;
     height: 200px;
     
-    background: url(../img/school_of_k_beauty/kbeauty-titbg.png) no-repeat;
+    background: url(../img/school_of_k_beauty/kbeauty-titbg.png) no-repeat left top;
+    
+    position: relative;
+    z-index: 9;
+    
 }
 
+.kbeauty_tit h2.kbeauty_howto{
+    width: 200px;
+    height: 200px;
+    padding-left: 25px;
+    padding-top: 90px;
+    box-sizing: border-box;
+}
 
 .kbeauty_container{
     width: 100%;
     max-width: 1540px;
     height: 442px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+
 }
 
 .kbeauty_container .main_view{
@@ -731,40 +746,37 @@ header {
     height: 442px;
     position: absolute;
     bottom: 0;
-    left: 70px;
+    left: 80px;
     padding: 0 20px 0 60px;
     box-sizing: border-box;
-    z-index: -1;
+    
 }
 
 .kbeauty_container .main_view p.main_view_box{
     width: 100%;
     max-width: 600px;
     height: 442px;
+    position: relative;
 }
-.kbeauty_container .main_view p.main_view_box a{
+.kbeauty_container .main_view p.main_view_box a.main_view_a{
     display: block;
     width: 100%;
     max-width: 600px;
     height: 442px;
-    border: 2px solid;
-    box-sizing: border-box;
-    
-
 }
 
-.kbeauty_container .main_view p.main_view_box a img.video_img{
+.kbeauty_container .main_view p.main_view_box a.main_view_a img.video_img{
     width: 100%;
     max-width: 600px;
     height: 442px;
-    
 }
 
-.kbeauty_container .main_view p.main_view_box a span.video_play{
+.kbeauty_container .main_view p.main_view_box a.main_view_a span.video_play{
     display: block;
     width: 100%;
     max-width: 600px;
     height: 442px;    
+    background: rgba(0,0,0,0.2);
     position: absolute;
     top: 0;
     left: 0;
@@ -878,6 +890,7 @@ a span.video_play img{
     height: 167px;
     margin: 0 auto;
     
+    position: relative;
     
 }
 
@@ -892,11 +905,20 @@ a.thumb p.thumbBox img.thumbBox_img{
     width: 100%;
     max-width: 173px;
     height: 127.31px;
+}
+p.thumbBox span.thumb_bk{
+    display: block;
+    width: 100%;
+    max-width: 173px;
+    height: 127.31px;
+    background: rgba(0,0,0,0.2);
     
-    background: #00f;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-a.thumb p.thumbBox span img.play_btn{
+a.thumb p.thumbBox span.thumb_bk img.play_btn{
     display: block;
     width: 46px;
     height: 46px;
