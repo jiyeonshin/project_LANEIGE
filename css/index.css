@@ -940,6 +940,130 @@ a.thumb p.thumbTxt{
 
 /*=====================================================================================*/
 
+/*Magazine시작*/
+.magazine_section{
+    width: 100%;
+    max-width: 1600px;
+    height: 740px;
+}
+
+.magazine_section .magazine_wrap{
+    width: 100%;
+    max-width: 1540px;
+    height: 740px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.magazine_section .magazine_wrap .magazine_txtcon{
+    width: 100%;
+    max-width: 655px;
+    height: 600px;
+    background: #f7f7f7;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.magazine_txtcon h2.contit{
+    display: block;
+    width: 100%;
+    max-width: 655px;
+    height: 154px;
+    padding-left: 30px;
+    padding-top: 100px;
+    box-sizing: border-box;
+}
+
+.magazine_txtcon .txtcon_box{
+    width: 100%;
+    max-width: 655px;
+    height: 325px;
+}
+
+.txtcon_box strong.txt_tit{
+    display: block;
+    font-size: 20px;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    height: 50px;
+    line-height: 50px;
+    background: url(../img/magazine_bar/magazine-barbg-1803.jpg) no-repeat;
+}
+
+.txtcon_box strong.txt_mid_des{
+    display: block;
+    font-size: 40px;
+    padding: 0 30px 35px;
+}
+
+.txtcon_box p.txt_des{
+    font-size: 14px;
+    padding: 0 30px 0;
+    max-height: 150px;
+}
+
+
+.magazine_wrap .magazine_txtcon .txtcon_box a.mag_view{
+    display: block;
+    width: 100%;
+    max-width: 160px;
+    height: 36px;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.magazine_img{
+    width: 100%;
+    max-width: 885px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.magazine_img .img_left{
+    width: 100%;
+    max-width: 520px;
+    height: 600px;
+}
+
+.img_left img.flower{
+    width: 100%;
+    max-width: 500px;
+    height: 600px;
+}
+
+.magazine_img .img_right{
+    width: 100%;
+    max-width: 365px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.img_right .right_up{
+     width: 100%;
+    max-width: 365px;
+    height: 370px;
+}
+
+.img_right .right_down{
+     width: 100%;
+    max-width: 365px;
+    height: 230px;
+}
+
+/*Magazine끝*/
+
+/*=====================================================================================*/
+
 /*main 끝*/
 
 /*footer 시작*/
