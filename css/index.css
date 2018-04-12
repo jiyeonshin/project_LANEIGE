@@ -1062,16 +1062,287 @@ a.thumb p.thumbTxt{
 
 /*Magazine끝*/
 
-/*=====================================================================================*/
+
 
 /*main 끝*/
+/*=====================================================================================*/
+
+
+/*Main Bottom 시작*/
+#wrap .container .mainBottomContent{
+    width: 100%;
+    max-width: 1540px;
+    height: 470px;
+    margin: 0 auto;
+    border: 2px solid;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+.main_link_section{
+    width: 100%;
+    max-width: 462px;
+    height: 330px;
+    float: left;
+}
+
+
+.main_link_section .finderMirror_wrap{
+    width: 100%;
+    max-width: 382px;
+    height: 330px;
+    position: relative;
+}
+
+.finderMirror_wrap a.finderM_a{
+    display: block;
+    width: 100%;
+    max-width: 382px;
+    height: 330px;
+    background: url(../img/finder_mirror/contents-linebg.gif) no-repeat top right;
+}
+
+a.finderM_a h2.f_tit{
+    width: 100%;
+    max-width: 382px;
+    padding-top: 25px;
+}
+
+a.finderM_a p.finderMirror_contxt{
+    width: 100%;
+    max-width: 382px;
+    display: block;
+    font-size: 14px;
+    padding-top: 25px;
+    
+}
+
+.finderMirror_img{
+    width: 382px;
+    height: 257px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+}
+
+.finderMirror_img img{
+    display: block;
+    margin: 0 auto;
+}
+
+
+/*-------------------------------------------------------------------------------------*/
+
+/*facebook section 시작*/
+.sns_feed_section{
+    width: 100%;
+    max-width: 562.39px;
+    height: 330px;
+    border: 1px solid;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.sns_feed_section .facebook_wrap{
+    width: 100%;
+    max-width: 562.39px;
+    height: 330px;
+    
+    background: url(../img/facebook/facebook-boxbg.png) no-repeat right top rgb(59,89,152);
+}
+
+.facebook_wrap h2.f_tit{
+    width: 100%;
+    max-width: 616px;
+    
+    padding-top: 25px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    color: #fff;
+    
+}
+
+.facebook_wrap p.f_logo{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 60px;
+}
+
+.facebook_slider .facebook_slider_gnb{
+    width: 100%;
+    height: 16px;
+}
+
+.facebook_slider_wrap{
+    width: 100%;
+    max-width: 616px;
+    height: 330px;
+    
+}
+
+.facebook_slider_wrap div{
+    
+}
+
+.facebook_slider_wrap ul{
+    width: 400%;
+    height: 188px;
+    margin-left: 20px;
+    border: 2px solid #f00;
+}
+
+.facebook_slider_wrap ul li{
+    width: 100%;
+    max-width: 536px;
+    height: 188px;
+    border: 2px solid;
+    float: left;
+}
+
+a.slide_a{
+    display: block;
+    width: 100%;
+    max-width: 516px;
+    height: 188px;
+        background: #fff;
+    
+}
+
+a.slide_a img{
+    display: block;
+    width: 188px;
+    height: 188px;
+
+    
+}
+.txt_left{
+
+    position: relative;
+    
+}
+
+.slider_itemtxt{
+    width: 100%;
+    max-width: 328px;
+    height: 188px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.slider_itemtxt p.slider_des{
+    width: 100%;
+    max-width: 288px;
+    height: 126px;
+    color: #3b5998;
+    line-height: 20px;
+    vertical-align: middle;
+    margin-top: 20px;
+    
+}
+
+.slider_itemtxt_bot{
+    width: 100%;
+    max-width: 130.73px;
+    height: 18px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    
+}
+
+.slider_itemtxt_bot span.like{
+    display: block;
+    
+    background: url(../img/facebook/facebook-like.gif) no-repeat;
+}
+
+/*facebook section 끝*/
+
+
+
+
+/*Main Bottom 끝*/
+
+/*=====================================================================================*/
 
 /*footer 시작*/
 
 footer {
     width: 100%;
-    height: 150px;
-    background: #555;
+    height: 477px;
 }
+
+.footer_wrap{
+    width: 100%;
+    max-width: 1540px;
+    height: 477px;
+    margin: 0 auto;
+}
+
+.footer_wrap .footer_pagelink{
+    width: 100%;
+    max-width: 1540px;
+    height: 100px;
+    min-height: 40px;
+    background: #f7f7f7;
+    padding: 15px 0;
+    margin-top: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.footer_page_wrap{
+    
+    width: 1568px;
+    height: 40px;
+    margin-left: -28px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 30%;
+    
+    
+}
+
+.footer_pagelink_box{
+    width: 100%;
+    max-width: 392px;
+    height: 40px;
+    padding: 0 40px 0 68px;
+    box-sizing: border-box;
+    float: left;
+    
+}
+
+.footer_pagelink_box a{
+    display: block;
+    width: 100%;
+    max-width: 392px;
+    height: 40px;
+    
+}
+
+.footer_pagelink_txtwrap{
+    width: 100%;
+    max-width: 284px;
+    height: 40px;
+    position: relative;
+}
+
+.footer_pagelink_txtwrap img{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+
+.txttablecll{
+    padding-right: 55px;
+    line-height: 40px
+}
+
 
 /*footer 끝*/
