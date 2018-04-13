@@ -1,21 +1,55 @@
 @charset "utf-8";
 
+html,body,ul,li,button{
+    margin: 0;
+    padding: 0;
+}
 
-@font-face {
-    font-family: 'NanumBarunGothic';
-    src: url('NanumBarunGothic.eot'),
-         url('NanumBarunGothic.woff') format('woff'),
-         url('NanumBarunGothic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+img{
+    display: block;
+    border: 0;
+}
+
+button{
+    border: 0;
+    background: none;
+    z-index: 2;
 }
 
 
-p.test{
-    font-size: 30px;
-    font-family: 'NanumBarunGothic', serif;
-    font-weight: bold;
+.slide{
+    width: 1540px;
+    height: 650px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    border: 2px solid;
+}
 
+.slide ul{
+    width: 500%;
+    list-style: none;
+    font-size: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
 
+.slide ul li{
+    display: inline-block;
+    
+    
+}
 
+.slide button.prev{
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.slide button.next{
+    position: absolute;
+    right: 0;
+    top: 50%;
 }
