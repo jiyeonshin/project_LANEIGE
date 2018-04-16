@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <title>Document</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        
+        h1{
+            text-align: center;
+            font: 1.6em;
+            margin: 30px 0;
+        }
+        
+        .container{
+            display: flex;
+            justify-content: center;
+            height: 80vh;
+            align-items: center;
+        }
+        
+        
+        .slider-wrapper{
+            width: 600px;
+            height: 300px;
+            overflow: hidden;
+        }
+        
+        .inner-wrapper{
+            width: 500%;
+            height: 100%;
+            position: relative;
+            left: -100%;
+        }
+        
+        .slide{
+            width: calc(100%/5);
+            height: 100%;
+            float: left;
+            font-size: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid;
+            box-sizing: border-box;
+        }
+        
+        .btn{
+            width: 30px;
+            height: 30px;
+            border-top: 2px solid black;
+            position: absolute;
+            cursor: pointer;
+        }
+        
+        .prev{
+            border-left: 2px solid black;
+            left: 10%;
+            transform: rotate(-45deg);
+        }
+        
+        .next{
+            border-right: 2px solid black;
+            right: 10%;
+            transform: rotate(45deg);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>이미지 슬라이더</h1>
+    
+    <div class="container">
+        <div class="slider-wrapper">
+            <div class="inner-wrapper">
+                <div class="slide">1</div>
+                <div class="slide">2</div>
+                <div class="slide">3</div>
+                <div class="slide">4</div>
+                <div class="slide">5</div>
+            </div>
+        </div>
+        
+        <div class="btn prev"></div>
+        <div class="btn next"></div>
+    </div>
+    
+    <script>
+        $(function(){
+           var inWrap=$('.inner-wrapper');
+            
+            $('.prev').on('click',function(){
+                inWrap.animate({left:'0%'}, 300, function(){
+                   inWrap.css('left','-100%');
+                    
+                    $('.slide').first().before($('.slide').last());
+                });
+            });
+            
+            
+            
+            $('.next').on('click',function(){
+                inWrap.animate({left:'-200%'}, 300, function(){
+                   inWrap.css('left','-100%');
+                    
+                    $('.slide').last().after($('.slide').first());
+                });
+            });
+        });
+    </script>
+</body>
+</html>

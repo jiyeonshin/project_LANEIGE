@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/reset.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <title>LANEIGE BENCHMARKING</title>
 </head>
 
@@ -32,7 +33,7 @@
                             <div class="UISlider_content">
 
                                 <div class="UISlider_item">
-                                    <ul>
+                                    <ul class="slides">
                                         <li>
                                             <div class="UISlider_box">
 
@@ -255,11 +256,11 @@
 
 
                                     <!--베스트셀러 슬라이더 시작-->
-
+<div class="UISlider_content">
                                     <div class="bst_slider">
-                                        <ul>
+                                        <ul class="slides">
                                             <li>
-                                                <div class="bst_slider_box">
+                                                <div class="bst_UISlider_box">
                                                     <a href="#" class="bst_a">
                                                
                                                 <img src="img/main_bestseller_banner/bestsellers-201804-01.png" alt="">
@@ -278,7 +279,7 @@
 
 
                                             <li>
-                                                 <div class="bst_slider_box">
+                                                 <div class="bst_UISlider_box">
                                                     <a href="#" class="bst_a">
 
                                                 <img src="img/main_bestseller_banner/bestsellers-201804-02_01.png" alt="">
@@ -296,7 +297,7 @@
                                             </li>
 
                                             <li>
-                                               <div class="bst_slider_box">
+                                               <div class="bst_UISlider_box">
                                                     <a href="#" class="bst_a">
                                                 <img src="img/main_bestseller_banner/bestsellers-201804-03.png" alt="">
                                                 <div class="bst_itemTxt">
@@ -314,7 +315,7 @@
 
 
                                             <li>
-                                               <div class="bst_slider_box">
+                                               <div class="bst_UISlider_box">
                                                     <a href="#" class="bst_a">
                                                 <img src="img/main_bestseller_banner/bestsellers-201804-04.png" alt="">
                                                 <div class="bst_itemTxt">
@@ -332,7 +333,7 @@
 
 
                                             <li>
-                                               <div class="bst_slider_box">
+                                               <div class="bst_UISlider_box">
                                                     <a href="#" class="bst_a">
                                                 <img src="img/main_bestseller_banner/bestsellers-201804-05.png" alt="">
                                                 <div class="bst_itemTxt">
@@ -349,6 +350,7 @@
                                             </li>
                                         </ul>
                                     </div>
+                                </div>
                                     <!--베스트셀러 슬라이더 끝-->
 
 
@@ -997,6 +999,74 @@
         <!--footer 끝-->
 
     </div>
+    
+    <script>
+    
+        var animationSpeed = 500;
+            var pause = 4000;
+            var currentSlide = 1;
+
+            var $slider = $('.UISlider_item');
+            var $slideContainer = $slider.find('.slides');
+            var $slides = $slideContainer.find('.UISlider_box');
+            var width = $slides.width();
+        
+        
+        $(function() {
+
+            /*자동 슬라이드 구현 시작*/
+            var animationSpeed = 500;
+            var pause = 3500;
+            var currentSlide = 0;
+
+            var $slider = $('.UISlider_item');
+            var $slideContainer = $slider.find('.slides');
+            var $slides = $slideContainer.find('.UISlider_box');
+            var width = $slides.width();
+
+
+        setInterval(function(){
+            
+                            $slideContainer.animate({'margin-left':'-='+width},animationSpeed,function(){
+                               currentSlide++;
+                                if(currentSlide === $slides.length){
+                                    currentSlide=1;
+                                    $slideContainer.css('margin-left',0);
+                                }
+                            });
+                            }, pause);
+                        
+                      
+        });
+        
+        /*자동 슬라이드 구현 끝*/
+        
+        /*화살표 버튼 누르면 이전화면 다음화면 나오기 구현*/
+        $(function() {
+
+                $('.leftArrow').on('click', function() {
+
+                    console.log('click');
+                    $('.slides').animate({left: '0%'}, 300, function() {
+                        $('.slides').css('left', '-='+width);
+                        $('.UISlider_box').first().before($('.UISlider_box').last());
+                    });
+                });
+            
+            
+                            $('.rightArrow').on('click', function() {
+
+                    
+                    $('.slides').animate({left: '-200%'}, 300, function() {
+                        $('.slides').css('left', '+='+width);
+                        console.log(width);
+                        $('.UISlider_box').last().after($('.UISlider_box').first());
+                    });
+                });
+            });
+        /*화살표 버튼 누르면 이전화면 다음화면 나오기 구현*/
+        
+    </script>
 
 </body>
 
