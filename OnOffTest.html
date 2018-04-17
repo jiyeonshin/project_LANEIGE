@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <title>On Off Test</title>
+    <style>
+        .btn_wrap{
+            /*background: #000;*/
+            
+        }
+        
+        .btn{
+            background: transparent;
+            border: transparent;
+            z-index: 3;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+   <div class="btn_wrap">
+       <button class="btn"><img src="img/slider/btn_off.png" alt=""></button>
+       <button class="btn"><img src="img/slider/btn_off.png" alt=""></button>
+       <button class="btn"><img src="img/slider/btn_off.png" alt=""></button>
+   </div>
+    <script>
+        $('.btn').on('click',function(e){
+           var $this = $(this);
+            
+            $this.find('img').attr("src", function(index,attr){
+               if(attr.match('_on')){
+                   return attr.replace("_on.png","_off.png");
+               } else{
+                   return attr.replace("_off.png","_on.png");
+               }
+            });
+            
+            
+        });
+    </script>
+</body>
+</html>

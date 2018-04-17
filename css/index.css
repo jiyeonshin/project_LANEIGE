@@ -118,6 +118,23 @@ header {
     left: 0;
 }
 
+.control_btn:hover{
+    top: -16px;
+    
+}
+
+.control_btn:active{
+    top: -31px;
+}
+
+.off{
+    background: url(../img/slider/btn_off.png) no-repeat;
+}
+.on {
+    background: url(../img/slider/btn_on.png) no-repeat;
+    
+}
+
 
 /*UISlider 끝*/
 
@@ -165,7 +182,8 @@ header {
     float: left;
     width: 29px;
     height: 15px;
-    background: url(../img/main_kv_banner/slider-pager-normal-shadow.png) no-repeat;
+    background: url(../img/slider/btn_off.png) no-repeat;
+    cursor: pointer;
 
 }
 /*슬라이드 버튼 끝*/
@@ -423,15 +441,18 @@ header {
 /*----------------------------------------------------------------------------------*/
 
 /*베스트셀러 슬라이드 시작*/
-
+.UISlider_content{
+    overflow: hidden;
+}
 
 .bst_slider{
     width: 500%;
     height: 380px;
     
+    
 }
 
-.UISlider_box{
+.bst_UISlider_box{
     width: 100%;
     max-width: 1540px;
     height: 380px;
@@ -440,7 +461,7 @@ header {
     
 }
 
-.UISlider_box a.bst_a{
+.bst_UISlider_box a.bst_a{
     display: block;
     width: 100%;
     max-width: 1540px;
