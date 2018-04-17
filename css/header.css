@@ -73,6 +73,7 @@ header h1 a img {
 }
 
 .header_gnb{
+    width: 100%;
     position: relative;
     z-index: 9000;
     background: #fff;
@@ -85,6 +86,7 @@ header h1 a img {
     top: 0;
     width: 100%;
     left: 0;
+    box-sizing: border-box;
 }
 
 .gnb_box{
@@ -97,4 +99,147 @@ header h1 a img {
     display: table;
     text-align: center;
     border-top: none;
+    
+    
 }
+
+.dep1{
+    width: auto;
+    display: inline-block;
+    padding: 0;
+    margin: 0 15px;
+    border-bottom: none;
+    vertical-align: top;
+    
+}
+
+.dep1 a{
+    display: block;
+    font-size: 16px;
+    padding: 10px 0;
+    letter-spacing: 0;
+    height: 40px;
+    line-height: 16px;
+    position: relative;
+}
+
+.dep2{
+    height: auto;
+    display: none;
+    overflow: auto;
+    text-align: left;
+}
+
+.dep2wrap{
+    z-index: 9099;
+}
+
+.dep2wrap.LaneigeStory{
+    width: auto;
+    top: 70px;
+    margin-left: -30px;
+    position: absolute;
+    background: #ffffff;
+    border-width: 0 1px 1px 1px;
+}
+
+.dep2wrap.Product {
+    z-index: 20;
+    padding-left: 20px;
+    display: none;
+    width: 100%;
+    top: 162px;
+    font-size: 14px;
+    position: fixed;
+    background: #ffffff;
+    border-width: 2px 0 1px 0;
+    border-style: solid;
+    
+}
+
+.dep2list{
+    margin: 0 auto;
+    display: table;
+    width: auto;
+    padding: 10px 0;
+    text-align: center;
+    left: -190px;
+}
+
+.dep2wrap.Product ul li {
+    display: inline-block;
+}
+
+
+.Product .dep2{
+    height: 72px;
+    text-align: left;
+    list-style: none;
+}
+
+
+.dep2wrap.HowTo{
+    top: 70px;
+    margin-left: -5px;
+    position: absolute;
+    background: #ffffff;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+}
+
+
+.dep2>a{
+    display: block;
+    font-size: 14px;
+    padding: 9px 30px 9px 30px;
+}
+
+
+.dep2wrap.FindYourBeauty {
+    display: none;
+    width: auto;
+    top: 70px;
+    margin-left: -5px;
+    position: absolute;
+    background: #ffffff;
+    border-width: 0 1px 1px 1px;
+    border-color: #000000;
+    border-style: solid;
+}
+
+.dep2wrap.MyLaneige {
+    display: none;
+    width: auto;
+    top: 70px;
+    margin-left: -50px;
+    position: absolute;
+    background: #ffffff;
+    border-width: 0 1px 1px 1px;
+    border-color: #000000;
+    border-style: solid;
+}
+
+.gnbutil{
+    right: 18px;
+    top: 95px;
+    position: absolute;
+
+    z-index: 9001;
+}
+
+.gnbutil .header_totsch {
+    float: left;
+}
+
+.gnbutil .header_totsch button {
+    width: 20px;
+    display: block;
+    padding: 12px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    vertical-align: middle;
+}
+
+
+
