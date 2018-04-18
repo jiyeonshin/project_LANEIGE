@@ -85,22 +85,25 @@ header h1 a img {
     padding: 10px 0 20px 0;
     top: 0;
     width: 100%;
+    overflow: visible;
     left: 0;
     box-sizing: border-box;
+}
+.gnb ul{
+    border-top: none;
 }
 
 .gnb_box{
     background: #fff;
+    
 }
 
-.gnb ul{
+.gnb ul.gnb_all{
     width: 100%;
     margin: 0 auto;
     display: table;
     text-align: center;
     border-top: none;
-    
-    
 }
 
 .dep1{
@@ -110,7 +113,10 @@ header h1 a img {
     margin: 0 15px;
     border-bottom: none;
     vertical-align: top;
-    
+}
+
+.dep2{
+    text-align: left;
 }
 
 .dep1 a{
@@ -123,91 +129,140 @@ header h1 a img {
     position: relative;
 }
 
-.dep2{
-    height: auto;
-    display: none;
-    overflow: auto;
-    text-align: left;
+.dep1 .dep1_icon{
+    display: inline-block;
+    width: 18px;
+    margin-left: 3px;
+    position: relative;
+    top: -3px;
+    border: 0;
+    vertical-align: top;
+    box-sizing: border-box;
 }
+
 
 .dep2wrap{
     z-index: 9099;
 }
 
 .dep2wrap.LaneigeStory{
+    display: none;
     width: auto;
+    position: absolute;
     top: 70px;
     margin-left: -30px;
-    position: absolute;
-    background: #ffffff;
-    border-width: 0 1px 1px 1px;
-}
-
-.dep2wrap.Product {
-    z-index: 20;
-    padding-left: 20px;
-    display: none;
-    width: 100%;
-    top: 162px;
-    font-size: 14px;
-    position: fixed;
-    background: #ffffff;
-    border-width: 2px 0 1px 0;
-    border-style: solid;
-    
-}
-
-.dep2list{
-    margin: 0 auto;
-    display: table;
-    width: auto;
-    padding: 10px 0;
-    text-align: center;
-    left: -190px;
-}
-
-.dep2wrap.Product ul li {
-    display: inline-block;
-}
-
-
-.Product .dep2{
-    height: 72px;
-    text-align: left;
-    list-style: none;
-}
-
-
-.dep2wrap.HowTo{
-    top: 70px;
-    margin-left: -5px;
-    position: absolute;
-    background: #ffffff;
-    border-width: 0 1px 1px 1px;
-    border-style: solid;
-}
-
-
-.dep2>a{
-    display: block;
-    font-size: 14px;
-    padding: 9px 30px 9px 30px;
-}
-
-
-.dep2wrap.FindYourBeauty {
-    display: none;
-    width: auto;
-    top: 70px;
-    margin-left: -5px;
-    position: absolute;
     background: #ffffff;
     border-width: 0 1px 1px 1px;
     border-color: #000000;
     border-style: solid;
 }
 
-.dep2wrap.MyLaneige {
+.dep2wrap.LaneigeStory ul{
+    border-top: none;
+    width: auto;
+    box-sizing: border-box;
+}
+
+.dep1 .dep2list{
+    margin: 0 auto;
+    padding: 10px 0;
+  
+}
+
+.dep2list .dep2>a{
+    display: block;
+    font-size: 14px;
+    padding: 9px 30px 9px 30px;
+    box-sizing: border-box;
+    
+}
+
+.dep2:first-child>a{
+    padding-top: 15px;
+}
+
+.dep2wrap.Product{
+    display: none;
+    overflow: auto;
+    height: auto;
+    width: 100%;
+    z-index: 20px;
+    padding-left: 20px;
+    position: fixed;
+    top: 162px;
+    left: 0;
+    font-size: 14px;
+    background: #ffffff;
+    border-width: 2px 0 1px 0;
+    border-style: solid;
+    height: 72px;
+}
+
+.dep2wrap.Product ul{
+    display: table;
+    border-top: none;
+    box-sizing: border-box;
+}
+
+.Product .dep2list{
+    margin-left: 618.063px;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    left: -190px;
+}
+.dep2wrap.Product ul li{
+    display: inline-block;
+}
+
+.Product .dep2{
+    height: 72px;
+}
+
+.Product .dep2:first-child>a{
+    background: none;
+}
+
+.Product .dep2list .dep2>a{
+    padding: 27px 10px 27px 30px;
+    display: block;
+    font-size: 14px;
+}
+
+.Product .dep2>a{
+    position: relative;
+}
+
+.dep2wrap.HowTo{
+    display: none;
+    width: auto;
+    top: 70px;
+    margin-left: -5px;
+    position: absolute;
+    background: #ffffff;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+}
+
+.dep2wrap.HowTo ul{
+    border-top: none;
+    width: auto;
+    box-sizing: border-box;
+}
+
+.dep2wrap.FindYourBeauty{
+    display: none;
+    width: auto;
+    top: 70px;
+    margin-left: -5px;
+    position: absolute;
+    background: #ffffff;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+}
+
+.dep2wrap.MyLaneige{
     display: none;
     width: auto;
     top: 70px;
@@ -215,15 +270,12 @@ header h1 a img {
     position: absolute;
     background: #ffffff;
     border-width: 0 1px 1px 1px;
-    border-color: #000000;
     border-style: solid;
 }
-
 .gnbutil{
-    right: 18px;
-    top: 95px;
     position: absolute;
-
+    right: 30px;
+    top: 120px;
     z-index: 9001;
 }
 
@@ -235,10 +287,18 @@ header h1 a img {
     width: 20px;
     display: block;
     padding: 12px;
+    box-sizing: content-box;
     cursor: pointer;
     background: transparent;
     border: none;
     vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+
+.totsch_img{
+    width: 100%;
+    vertical-align: top;
 }
 
 

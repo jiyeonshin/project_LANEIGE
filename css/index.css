@@ -272,6 +272,7 @@
     max-width: 1600px;
     height: 834px;
     
+    
 }
 
 .bestseller_section .bestseller_wrap {
@@ -299,6 +300,7 @@
     width: 100%;
     height: 270px;
 
+    border-bottom: 1px solid #e4e4e4;
 }
 
 .bst_product button {
@@ -1364,81 +1366,3 @@ a.slide_a img{
 
 /*=====================================================================================*/
 
-/*footer 시작*/
-
-footer {
-    width: 100%;
-    height: 477px;
-}
-
-.footer_wrap{
-    width: 100%;
-    max-width: 1540px;
-    height: 477px;
-    margin: 0 auto;
-}
-
-.footer_wrap .footer_pagelink{
-    width: 100%;
-    max-width: 1540px;
-    height: 100px;
-    min-height: 40px;
-    background: #f7f7f7;
-    padding: 15px 0;
-    margin-top: 10px;
-    box-sizing: border-box;
-    position: relative;
-}
-
-.footer_page_wrap{
-    
-    width: 1568px;
-    height: 40px;
-    margin-left: -28px;
-    box-sizing: border-box;
-    position: absolute;
-    top: 30%;
-    
-    
-}
-
-.footer_pagelink_box{
-    width: 100%;
-    max-width: 392px;
-    height: 40px;
-    padding: 0 40px 0 68px;
-    box-sizing: border-box;
-    float: left;
-    
-}
-
-.footer_pagelink_box a{
-    display: block;
-    width: 100%;
-    max-width: 392px;
-    height: 40px;
-    
-}
-
-.footer_pagelink_txtwrap{
-    width: 100%;
-    max-width: 284px;
-    height: 40px;
-    position: relative;
-}
-
-.footer_pagelink_txtwrap img{
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    
-}
-
-.txttablecll{
-    padding-right: 55px;
-    line-height: 40px
-}
-
-
-/*footer 끝*/
