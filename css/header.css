@@ -1,9 +1,14 @@
 @charset "utf-8";
 
 header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
     height: auto;
     border-bottom: 2px solid #000000;
     display: block;
+    z-index: 9000;
 }
 .header_wrap{
     width: 100%;

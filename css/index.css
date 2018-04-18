@@ -13,6 +13,9 @@
 .container {
     width: 100%;
     height: auto;
+    position: relative;
+    min-height: 300px;
+    
 }
 
 .container .mainContent {
