@@ -9,6 +9,8 @@ header{
     border-bottom: 2px solid #000000;
     display: block;
     z-index: 9000;
+    background: #ffffff;
+    font-family: 'Arita Sans';
 }
 .header_wrap{
     width: 100%;
@@ -30,6 +32,7 @@ header h1 a{
     height: auto;
     letter-spacing: 1.2;
     vertical-align: middle;
+    
 }
 
 header h1 a img {

@@ -3,7 +3,7 @@
 
 #wrap {
     width: 100%;
-    height: auto;
+    position: relative;
 }
 
 /*main 시작*/
@@ -11,8 +11,12 @@
 /*main gallery시작*/
 
 .container {
-    width: 100%;
+    /*width: 100%;
     height: auto;
+    position: relative;
+    min-height: 300px;*/
+    
+    padding-top: 162px;
     position: relative;
     min-height: 300px;
 }
@@ -21,6 +25,7 @@
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
+    padding: 0;
 }
 .container .mainContent .galleryContents {
     width: 100%;
@@ -36,9 +41,8 @@
 /*UISlider 시작*/
 
 .UISlider_container{
+   
     width: 100%;
-    max-width: 1600px;
-    height: 650px;
 }
 
 
@@ -54,14 +58,15 @@
 
 .UISlider_container .UISlider_content .UISlider_item{
      width: 600%;
-    height: 650px;
+    display: block;
+    font-size: 0;
+    
     left: -100%;
 }
 
 .UISlider_box{
     width: 100%;
     max-width: 1540px;
-    height: 650px;
     float: left;
     position: relative;
     
@@ -84,6 +89,7 @@
     top: 0;
     left: 0;
     z-index: 3;
+    font-family: '나눔바른고딕';
     
 }
 
@@ -220,6 +226,7 @@
     float: left;
     position: relative;
     top: 80px;
+    
 }
 
 .category_section .custom_main_box a {
@@ -229,6 +236,14 @@
     margin: 0 auto;
     border-left: 1px solid;
     border-bottom: 1px solid;
+    font-family: 'Arita Sans';
+    
+    
+}
+
+.custom_main_box span{
+    display: block;
+    font-size: 20px;
 }
 
 .category_section .custom_main_box a.img1 {
@@ -286,6 +301,7 @@
 
 .bestseller_section .bestseller_wrap h2.bst_tit {
     height: 54px;
+    font-family: 'Arita Sans'
 }
 
 .bestseller_section .bestseller_wrap .bestseller_container {
@@ -332,6 +348,8 @@
     display: block;
     width: 308px;
     height: 40px;
+    font-family: '나눔바른고딕';
+    font-size: 16px;
 }
 
 /*베스트셀러 제품 이미지 버튼 끝*/
@@ -468,6 +486,7 @@
     position: absolute;
     top: 30%;
     left: 0;
+    font-family: '나눔바른고딕';
     /*background: #ccc;*/
 
 }
@@ -522,6 +541,7 @@
 
 .event_section .event_wrap h2.event_tit{
     height: 39px;
+    font-family: 'Arita Sans'
 }
 
 .event_section .event_wrap .event_slider_wrap{
@@ -591,6 +611,7 @@
     top: 0;
     left: 0;
     z-index: 2;
+    font-family: '나눔바른고딕';
 }
 
 .event_itemTxt p.tit{
@@ -692,6 +713,7 @@
 
 .sparkling_section .sparkling_wrap h2.sparkling_tit{
     height: 39px;
+    font-family: 'Arita Sans'
 }
 
 .sparkling_section .sparkling_wrap .sparkling_container{
@@ -728,6 +750,7 @@
     height: 54px;
     font-size: 20px;
     margin-bottom: 25px;
+    font-family: 'Arita Sans'
 }
 
 .sparkling_cardbox{
@@ -812,6 +835,7 @@
     
     position: relative;
     z-index: 9;
+    font-family: 'Arita Sans'
     
 }
 
@@ -909,6 +933,7 @@ a span.video_play img{
    
     letter-spacing: -1px;
     padding: 7px 0 15px 0;
+    font-family: '나눔바른고딕';
     
     
 }
@@ -920,6 +945,7 @@ a span.video_play img{
     padding-bottom: 25px;
     font-size: 14px;
     box-sizing: border-box;
+    font-family: 'Arita Sans';
 }
 .kbeauty_content_wrap .kbeauty_conbox a.view{
     display: block;
@@ -931,6 +957,7 @@ a span.video_play img{
     text-align: center;
     line-height: 30px;
     font-size: 14px;
+    font-family: 'Arita Sans';
 }
 
 .kbeauty_content_wrap .kbeauty_related{
@@ -955,6 +982,7 @@ a span.video_play img{
     margin-bottom: 20px;
     box-sizing: border-box;
     background: url(../img/school_of_k_beauty/kbeauty-relatied-titbg.gif) no-repeat right;
+    font-family: 'Arita Sans'
 }
 
 .related_wrap{
@@ -1033,6 +1061,7 @@ a.thumb p.thumbTxt{
     box-sizing: border-box;
    
     letter-spacing: -1px;
+    font-family: '나눔바른고딕';
     
 }
 /*kbeauty 끝*/
@@ -1072,12 +1101,14 @@ a.thumb p.thumbTxt{
     padding-left: 30px;
     padding-top: 100px;
     box-sizing: border-box;
+    font-family: 'Arita Sans'
 }
 
 .magazine_txtcon .txtcon_box{
     width: 100%;
     max-width: 655px;
     height: 325px;
+    font-family: 'Arita Sans';
 }
 
 .txtcon_box strong.txt_tit{
@@ -1088,6 +1119,7 @@ a.thumb p.thumbTxt{
     height: 50px;
     line-height: 50px;
     background: url(../img/magazine_bar/magazine-barbg-1803.jpg) no-repeat;
+    
 }
 
 .txtcon_box strong.txt_mid_des{
@@ -1100,7 +1132,7 @@ a.thumb p.thumbTxt{
     font-size: 14px;
     padding: 0 30px 0;
     max-height: 150px;
-
+    font-family: '나눔바른고딕';
 }
 
 
@@ -1215,6 +1247,7 @@ a.finderM_a p.finderMirror_contxt{
     display: block;
     font-size: 14px;
     padding-top: 25px;
+    font-family: '나눔바른고딕';
     
 }
 

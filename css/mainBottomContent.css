@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+.main_bottom_wrap{
+    width: 100%;
+    height: 470px;
+    border: 2px solid;
+    box-sizing: border-box;
+    
+    
+}
+.main_link_section{
+    float: left;
+}
+.findermirror_wrap{
+    background: url(../img/finder_mirror/contents-linebg.gif) no-repeat;
+    background-position: right top;
+    position: relative;
+}
+
+.findermirror_con{
+    display: block;
+    height: 330px;
+    border: 1px solid;
+}
+
+.main_contit{
+    display: block;
+    line-height: 30px;
+    padding-right: 85px;
+    font-size: 30px;
+    font-family: 'Arita Sans';
+    font-weight: normal;
+}
+
+.findermirror_contxt{
+    display: block;
+    font-size: 14px;
+    padding-top: 20px;
+    vertical-align: middle;
+    font-family: '나눔바른고딕';
+    font-weight: normal;
+}
+
+.findermirror_img{
+    display: block;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 257px;
+    border: 0;
+    vertical-align: top;
+}
