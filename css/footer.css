@@ -46,7 +46,12 @@ footer {
     padding: 0 40px 0 68px;
     box-sizing: border-box;
     float: left;
+    background: url(../img/footer/footer-pagelink-bg.gif) left center no-repeat;
     
+}
+
+.footer_pagelink_box.first{
+    background: none;
 }
 
 .footer_pagelink_box a{
@@ -163,3 +168,41 @@ footer_top{
     width: 32px;
     vertical-align: top;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

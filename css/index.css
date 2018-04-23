@@ -90,6 +90,7 @@
     left: 0;
     z-index: 3;
     font-family: '나눔바른고딕';
+    font-weight: normal;
     
 }
 
@@ -236,15 +237,10 @@
     margin: 0 auto;
     border-left: 1px solid;
     border-bottom: 1px solid;
-    font-family: 'Arita Sans';
     
     
 }
 
-.custom_main_box span{
-    display: block;
-    font-size: 20px;
-}
 
 .category_section .custom_main_box a.img1 {
     background: url(../img/banner_bg/banner-bg01.jpg) no-repeat right;
@@ -276,7 +272,9 @@
     top: 17.5px;
     left: 30px;
     
-    font-size: 16px;
+    font-size: 20px;
+    font-family: 'Arita Sans';
+    font-weight: normal;
 }
 /*category section 끝*/
 
@@ -301,7 +299,9 @@
 
 .bestseller_section .bestseller_wrap h2.bst_tit {
     height: 54px;
-    font-family: 'Arita Sans'
+    font-family: 'Arita Sans';
+    font-weight: 600;
+    font-size: 30px;
 }
 
 .bestseller_section .bestseller_wrap .bestseller_container {
@@ -365,9 +365,6 @@
     margin: 0 auto;
 
     position: relative;
-    
-    
-    
 }
 
 /*베스트셀러 화살표 버튼 시작*/
@@ -541,7 +538,9 @@
 
 .event_section .event_wrap h2.event_tit{
     height: 39px;
-    font-family: 'Arita Sans'
+    font-family: 'Arita Sans';
+    font-weight: 600;
+    font-size: 30px;
 }
 
 .event_section .event_wrap .event_slider_wrap{
@@ -713,7 +712,9 @@
 
 .sparkling_section .sparkling_wrap h2.sparkling_tit{
     height: 39px;
-    font-family: 'Arita Sans'
+    font-family: 'Arita Sans';
+    font-weight: 600;
+    font-size: 30px;
 }
 
 .sparkling_section .sparkling_wrap .sparkling_container{
@@ -827,15 +828,14 @@
 }
 
 .kbeauty_section .kbeauty_wrap .kbeauty_tit{
+    display: block;
     width: 100%;
     max-width: 200px;
     height: 200px;
-    
     background: url(../img/school_of_k_beauty/kbeauty-titbg.png) no-repeat left top;
-    
     position: relative;
     z-index: 9;
-    font-family: 'Arita Sans'
+
     
 }
 
@@ -845,6 +845,10 @@
     padding-left: 25px;
     padding-top: 90px;
     box-sizing: border-box;
+    font-family: 'Arita Sans';
+    font-weight: 600;
+    font-size: 30px;
+    
 }
 
 .kbeauty_container{
@@ -1101,7 +1105,9 @@ a.thumb p.thumbTxt{
     padding-left: 30px;
     padding-top: 100px;
     box-sizing: border-box;
-    font-family: 'Arita Sans'
+    font-family: 'Arita Sans';
+    font-weight: 600;
+    font-size: 30px;
 }
 
 .magazine_txtcon .txtcon_box{
@@ -1119,6 +1125,9 @@ a.thumb p.thumbTxt{
     height: 50px;
     line-height: 50px;
     background: url(../img/magazine_bar/magazine-barbg-1803.jpg) no-repeat;
+    font-family: 'Arita Sans';
+    font-weight: 400;
+    font-size: 20px;
     
 }
 
@@ -1126,6 +1135,8 @@ a.thumb p.thumbTxt{
     display: block;
     font-size: 40px;
     padding: 0 30px 35px;
+    font-family: 'Arita Sans';
+    font-weight: 600;
 }
 
 .txtcon_box p.txt_des{
