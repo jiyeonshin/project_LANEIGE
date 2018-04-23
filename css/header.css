@@ -125,6 +125,10 @@ header h1 a img {
     vertical-align: top;
 }
 
+.dep1>a:hover{
+    border-bottom: 6px solid #8cd3ff;
+}
+
 .dep2{
     text-align: left;
 }
