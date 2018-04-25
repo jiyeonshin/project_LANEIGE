@@ -31,12 +31,15 @@
     margin: 0 auto;
 }
 
-.nav_home{
-    background: url(../img/story/breadcrumbs-home.gif) no-repeat;
+.nav_bar{
+     background: url(../img/story/breadcrumbs-arrow.gif) right center no-repeat;
 }
-.section_nav_wrap p a::after{
-    content: "|"
+
+.section_nav .section_nav_wrap span{
+    padding-right: 15px;
+    padding-left: 15px;
 }
+
 /*section nav 끝*/
 
 .section_wrap{
