@@ -1,6 +1,9 @@
 @charset "utf-8";
 
 footer {
+    
+    position: relative;
+    bottom: -30%;
 }
 
 .footer_wrap{

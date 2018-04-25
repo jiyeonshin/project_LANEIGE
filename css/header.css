@@ -201,7 +201,7 @@ header h1 a img {
     height: auto;
     width: 100%;
     z-index: 20px;
-    padding-left: 20px;
+    padding-left: 618px;
     position: fixed;
     top: 162px;
     left: 0;
@@ -316,4 +316,6 @@ header h1 a img {
 }
 
 
-
+.test{
+    border: 1px solid;
+}
