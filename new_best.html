@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/new_best.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <title>new_best</title>
 </head>
 
@@ -634,6 +635,20 @@
                 </div>
             </div>
         </footer>
+        
+        <script>
+            $('.new_product_list_wrap ul li a').hover(function(){
+               $(this).find('.img_shadow , .img_txt').css('display','block');
+                $(this).find('img').css('transition','1s all');
+                $(this).find('img').css('transform','scale(1.1)');
+                
+                
+            },function(){
+                $(this).find('.img_shadow , .img_txt').css('display','none');
+                $(this).find('img').css('transform','scale(1)');
+                
+            });
+    </script>
 </body>
 
 </html>
