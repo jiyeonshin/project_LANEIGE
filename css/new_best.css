@@ -1,0 +1,259 @@
+@charset "utf-8";
+
+
+.container{
+    width: 100%;
+    height: auto;
+    
+    margin: 0 auto;
+    position: relative;
+    top: 175px;
+    
+}
+
+/*section nav 시작*/
+.section_nav{
+    width: 100%;
+    height: 56px;
+    padding: 16px 30px 16px 30px;
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 40px;
+}
+
+.section_nav .section_nav_wrap{
+    padding-left: 20px;
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.nav_bar{
+     background: url(../img/story/breadcrumbs-arrow.gif) right center no-repeat;
+}
+
+.section_nav .section_nav_wrap span{
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 12px;
+    font-family: 'Arita Sans';
+}
+
+.section_nav .section_nav_wrap span.nav_home{
+    background: url(../img/story/breadcrumbs-home.gif) no-repeat;
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.section_nav .section_nav_wrap span.bold{
+    font-weight: 600;
+}
+/*section nav 끝*/
+
+.section_wrap{
+    width: 100%;
+}
+
+.banner_section{
+    width: 100%;
+    margin-bottom: 100px;
+    
+}
+
+.banner_section .title_box{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 70px;
+    font-family: 'Arita Sans';
+}
+
+h1.new_title{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.new_tab{
+    width: 100%;
+    position: relative;
+}
+
+.title_box .new_tab ul{
+    position: absolute;
+    left: 39.5%;
+}
+.title_box .new_tab ul li{
+    float: left;
+    width: 200px;
+    height: 30px;
+    border: 1px solid;    
+}
+
+.title_box .new_tab ul li a{
+    display: block;
+    text-align: center;
+    line-height: 30px;
+}
+
+.banner{
+    width: 100%;
+}
+
+.banner_box{
+    width: 100%;
+    position: relative;
+}
+
+.banner_img{
+    width: 100%;
+    height: 100%;
+}
+
+.banner_img img{
+    width: 100%;
+}
+.banner_txtbox{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 3%;
+    padding-left: 48%;
+    font-family: 'Arita Sans';
+}
+.banner_title_area{
+    margin-bottom: 30px;
+}
+
+.banner_title_area p{
+    font-size: 20px;
+}
+
+.banner_title_area h1{
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.banner_title_area h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.des_area{
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.view_detail a{
+    display: block;
+    width: 15%;
+    height: 40px;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    line-height: 40px;
+    padding-left: 3.5%;
+    font-size: 14px;
+}
+
+
+
+/*=============================================*/
+/*new list css 시작*/
+
+.new_product_list{
+    width: 100%;
+    max-width: 1260px;
+    height: 1240px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+.new_product_list_wrap{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 100px;
+    padding: 80px 20px;
+}
+
+.new_product_list_wrap ul{
+    margin-left: -20px;
+    overflow: hidden;
+}
+.new_product_list_wrap ul li.title_area{
+    width: 48.5%;
+    margin-left: 1.5%;
+    font-family: 'Arita Sans';
+}
+
+.new_product_list_wrap ul li{
+    float: left;
+    width: 25%;
+    list-style: none;
+}
+
+.new_product_list_wrap ul li a{
+    display: block;
+    margin: 0 0 20px 20px;
+    position: relative;
+    overflow: hidden;
+}
+.product_title p.product_en{
+    font-size: 56px;
+    font-weight: 600;
+}
+
+.product_des{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+
+
+.new_product_list_wrap ul li a .img_shadow{
+    /*display: none;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 97%;
+    height: 99%;
+    background: #000;
+    opacity: 0.7;
+    z-index: 9;
+}
+
+.img_txt{
+    /*display: none;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 99;
+    padding: 0 20px;
+    width: 100%;
+}
+
+
+.img_txt div{
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.img_txt p{
+    color: #FFF;
+    display: table-cell;
+    vertical-align: middle;*/
+}
+
+.kr_nm{
+        font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Arita Sans';
+}
