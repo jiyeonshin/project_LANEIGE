@@ -215,7 +215,7 @@ h1.new_title{
 
 
 .new_product_list_wrap ul li a .img_shadow{
-    /*display: none;*/
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -227,7 +227,7 @@ h1.new_title{
 }
 
 .img_txt{
-    /*display: none;*/
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
