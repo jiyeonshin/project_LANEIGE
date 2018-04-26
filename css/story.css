@@ -38,8 +38,19 @@
 .section_nav .section_nav_wrap span{
     padding-right: 15px;
     padding-left: 15px;
+    font-size: 12px;
+    font-family: 'Arita Sans';
 }
 
+.section_nav .section_nav_wrap span.nav_home{
+    background: url(../img/story/breadcrumbs-home.gif) no-repeat;
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.section_nav .section_nav_wrap span.bold{
+    font-weight: 600;
+}
 /*section nav 끝*/
 
 .section_wrap{
@@ -105,17 +116,22 @@
     font-size: 18px;
     font-family: 'Arita Sans';
     color: rgb(60, 131, 198);
+    position: relative;
 }
 
 .section_concept h2.con_tit::after{
-    content: "";
-    width: 40px;
-    height: 40px;
-    background: url(../img/story/story-tit-bg.png) no-repeat;
+    content: url(../img/story/story-tit-bg.png);
+    width: 100%;
+    height: 100%;    
+    position: absolute;
+    top: -8px;
+    left: 208px
 }
+
 .concept_txtbox{
     width: 100%;
     height: 500px;
+    margin-bottom: 90px;
 }
 
 .concept_txtbox .concept_tit{
@@ -123,7 +139,7 @@
     color: rgb(60, 131, 198);
     font-family: '나눔바른고딕';
     font-size: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 
 
@@ -140,11 +156,11 @@
 
 
 .concept_des p.mid{
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 
 .concept_des p.bottom{
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .concept_img{
