@@ -145,6 +145,7 @@
     position: absolute;
     bottom: 50px;
     left: 0;
+    z-index: 9;
 }
 
 .gnb_kv .play_btn .play {
@@ -392,7 +393,7 @@
     position: absolute;
     top: 50%;
     left: 15px;
-    z-index: 9;
+    z-index: 10;
 }
 
 .bst_arrow .rightArrow {
@@ -402,7 +403,7 @@
     position: absolute;
     top: 50%;
     right: 15px;
-    z-index: 9;
+    z-index: 10;
 }
 
 /*베스트셀러 화살표 버튼 끝*/
@@ -455,8 +456,8 @@
     float: left;
     width: 29px;
     height: 15px;
-    background: url(../img/main_kv_banner/slider-pager-normal-shadow.png) no-repeat;
-
+    /*background: url(../img/main_kv_banner/slider-pager-normal-shadow.png) no-repeat;*/
+    z-index: 10;
 }
 
 /*베스트셀러 슬라이드 버튼 끝*/
@@ -709,7 +710,8 @@
     float: left;
     width: 29px;
     height: 15px;
-    background: url(../img/main_kv_banner/slider-pager-normal-shadow.png) no-repeat;
+    /*background: url(../img/main_kv_banner/slider-pager-normal-shadow.png) no-repeat;*/
+    z-index: 9;
 }
 
 /*이벤트 슬라이드 버튼 끝*/

@@ -1,57 +1,93 @@
- var animationSpeed =700;
-            var pause = 4000;
-            var currentSlide = 1;
+$(document).ready(function(e){
+    var item = $('.gnb_kv>.gnb_btn>ul>li');
+        var slide = $('.UISlider_item>ul>li');
+        var slideCount = $('.UISlider_item>ul>li').length;
+        var leftArrow = $('.arrow_kv>.leftArrow');
+        var rightArrow = $('.arrow_kv>.rightArrow');
+        var play = $('.play_btn>.play');
+        var stop =$('.play_btn>.stop');
+        var idx = 0;
+    
+    item.addClass('off');
 
-            var $slider = $('.UISlider_item');
-            var $slideContainer = $slider.find('.slides');
-            var $slides = $slideContainer.find('.UISlider_box');
-            var width = $slides.width();
-        
-        
-        $(function() {
+        function fadeAuto(e) {
+            idx++;
+            slide.eq(idx).fadeIn().siblings().fadeOut(400);
+            item.eq(idx).addClass('on').siblings().addClass('off').removeClass('on');
 
-            /*자동 슬라이드 구현 시작*/
-           
+            if (idx > slideCount - 2) {
+                idx = -1;
+            }
+
+        }
+
+        var setin = setInterval(fadeAuto, 3000);
+
+        item.hover(
+            function(e) {
+                clearInterval(setin);
+            },
+            function(e) {
+                setin = setInterval(fadeAuto, 3000);
+            }
+        );
+
+        item.on('click', function(e) {
 
 
-        setInterval(function(){
+            var key = $(this).index();
+            slide.eq(key).fadeIn(200).siblings().fadeOut(100);
+
+            item.eq(key).addClass('on').siblings().removeClass('on');
+
             
-                            $slideContainer.animate({'margin-left':'-='+width},animationSpeed,function(){
-                               currentSlide++;
-                                if(currentSlide === $slides.length){
-                                    currentSlide=1;
-                                    $slideContainer.css('margin-left',0);
-                                }
-                            });
-                            }, pause);
-                        
-                      
+            if (key == slideCount - 1) {
+                idx = -1;
+            } else {
+                idx = key;
+            }
+
         });
         
-        /*자동 슬라이드 구현 끝*/
+        leftArrow.on('click',function(e){
         
-        /*화살표 버튼 누르면 이전화면 다음화면 나오기 구현*/
-        $(function() {
-
-                $('.leftArrow').on('click', function() {
-
-                    console.log('click');
-                    $('.slides').animate({left: '0%'}, 300, function() {
-                        $('.slides').css('left', '-='+width);
-                        $('.UISlider_box').first().before($('.UISlider_box').last());
-                    });
-                });
+           idx--;
+            slide.eq(idx).fadeIn(300).siblings().fadeOut(200);
             
+            item.eq(idx).addClass('on').siblings().removeClass('on');
             
-                            $('.rightArrow').on('click', function() {
-
-                    
-                    $('.slides').animate({left: '-200%'}, 300, function() {
-                        $('.slides').css('left', '+='+width);
-                        console.log(width);
-                        $('.UISlider_box').last().after($('.UISlider_box').first());
-                    });
-                });
-            });
-        /*화살표 버튼 누르면 이전화면 다음화면 나오기 구현*/
+            if(idx==0){
+                idx=slideCount;
+            }else{
+                idx=idx;
+            }
         
+        });
+        
+        rightArrow.on('click',function(e){
+            
+           idx++;
+            slide.eq(idx).fadeIn(300).siblings().fadeOut(200);
+            
+            item.eq(idx).addClass('on').siblings().removeClass('on');
+            
+            if(idx>slideCount-2){
+                idx=-1;
+            }
+        
+        });
+        
+        play.on('click',function(e){
+            setin = setInterval(fadeAuto, 3000);
+            play.css('display','none');
+            stop.css('display','block');
+        });
+        
+        stop.on('click',function(e){
+            stop.css('display','none');
+            play.css('display','block');
+            clearInterval(setin);
+        });
+    
+}); 
+

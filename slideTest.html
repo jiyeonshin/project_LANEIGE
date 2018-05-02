@@ -251,9 +251,12 @@
         
         play.on('click',function(e){
             setin = setInterval(fadeAuto, 3000);
+            play.css('display','none');
+            stop.css('display','block');
         });
         
         stop.on('click',function(e){
+            stop.css('display','none');
             play.css('display','block');
             clearInterval(setin);
         });

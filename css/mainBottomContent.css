@@ -121,6 +121,23 @@
     overflow: hidden;
 }
 
+.facebook_item{
+    margin: 0 auto;
+    width: 210px;
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+}
+
+.facebook_item ul li{
+    margin: 0 auto;
+    float: left;
+    width: 24px;
+    height: 12px;
+    margin: 0 2px;
+    cursor: pointer;
+    z-index: 10;
+}
 .facebook_slider_item_wrap{
     width: 400%;
     height: 188px;
@@ -198,8 +215,17 @@
     padding-right: 7px;
 }
 
+.f_off{
+    
+    background: url(../img/slider/slider-pager-normal.png) no-repeat;
+    background-size: cover;
+}
 
-
+.f_on{
+    
+    background: url(../img/slider/slider-pager-active.png) no-repeat;
+    background-size: cover;
+}
 
 
 

@@ -260,22 +260,87 @@
 .slider_content_wrap {
     position: relative;
     display: block;
-    overflow: hidden;
-    margin: 0;
+    
+    margin: 0 auto;
+    
+    /*margin: 0;*/
     padding: 0;
+    
 }
 
 .slider_track {
-    width: 300%;
+    width: 320%;
 }
 
 .best_list_wrap{
     width: 380px;
+    
 }
 
+.slider_content{
+    overflow: hidden;
+    
+    width: 92%;
+    margin: 0 auto;
+    
+}
+
+.slider_content .leftArrow{
+    display: block;
+    background: transparent;
+    border: transparent;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    cursor: pointer;
+}
+
+.slider_content .rightArrow{
+    display: block;
+    background: transparent;
+    border: transparent;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    cursor: pointer;
+}
+
+
+.slider_content .recent_leftArrow{
+    display: block;
+    background: transparent;
+    border: transparent;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    cursor: pointer;
+}
+
+.slider_content .recent_rightArrow{
+    display: block;
+    background: transparent;
+    border: transparent;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    cursor: pointer;
+}
+/*
 .slider_content ul li{
     display: inline-block;
+    
+}*/
+
+.slider_track li{
+    float: left;
 }
+
+.slider_track li div{
+    /*float: left;*/
+    
+    display: inline-block;
+}
+
 
 .best_list a{
     display: block;
@@ -286,10 +351,15 @@
 .best_list_thumb{
     width: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 .best_list_thumb img{
+    display: block;
     width: 100%;
+    transition: all .5s ease-in-out;
+    transform: scale(1);
+    
 }
 
 .img_video_shadow {
@@ -303,7 +373,7 @@
     opacity: 0.2;
 }
 
-.videothumb_play {
+span.videothumb_play {
     width: 50px;
     height: 50px;
     position: absolute;
@@ -311,6 +381,7 @@
     top: 50%;
     margin-top: -25px;
     margin-left: -25px;
+    z-index: 10;
 }
 
 .best_list_title{
@@ -341,6 +412,7 @@
     width: 100%;
     margin-left: -16px;
     
+    
 }
 
 .relatedlist_item {
@@ -357,4 +429,47 @@
 .relatedlist_item a img{
     width: 100%;
 }
+
+.online_item ul li{
+    position: relative;
+    bottom: 10%;
+    left: 45%;
+    margin: 0 auto;
+    float: left;
+    width: 24px;
+    height: 12px;
+    margin: 0 2px;
+    cursor: pointer;
+    z-index: 10;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.recent_item ul li{
+    position: relative;
+    bottom: 10%;
+    left: 45%;
+    margin: 0 auto;
+    float: left;
+    width: 24px;
+    height: 12px;
+    margin: 0 2px;
+    cursor: pointer;
+    z-index: 10;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.f_off{
+    
+    background: url(../img/online_class/etc/slick-dot.png) no-repeat;
+    background-size: cover;
+}
+
+.f_on{
+    
+    background: url(../img/online_class/etc/slick-dot-active.png) no-repeat;
+    background-size: cover;
+}
+
+
 /*베스트 슬라이더 섹션 끝*/
