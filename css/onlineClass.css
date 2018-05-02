@@ -273,6 +273,10 @@
     width: 380px;
 }
 
+.slider_content ul li{
+    display: inline-block;
+}
+
 .best_list a{
     display: block;
     width: 100%;

@@ -1,4 +1,4 @@
- var animationSpeed = 500;
+ var animationSpeed =700;
             var pause = 4000;
             var currentSlide = 1;
 

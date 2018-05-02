@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+.on{
+    background: url(../img/slider/btn_on.png);
+}
+
+.off{
+    background: url(../img/slider/btn_off.png);
+}

@@ -3,28 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
     <title>On Off Test</title>
     <style>
-        .btn_wrap{
-            /*background: #000;*/
-            
+        body{
+            background: #555;
         }
-        
-        .btn{
+        .btn_wrap {
+            /*background: #000;*/
+        }
+
+        .btn {
             background: transparent;
             border: transparent;
             z-index: 3;
             cursor: pointer;
         }
+
+
+        .item {
+            width: 180px;
+            height: 30px;
+            position: absolute;
+            border: 0px solid;
+            bottom: 50px;
+            left: 40%;
+        }
+
+        .item>ul>li {
+            width: 20px;
+            height: 20px;
+            float: left;
+            border: 1px solid;
+            /*border-radius: 50%;*/
+            margin: 0 2px;
+            background: url(../img/btn_off.png) no-repeat;
+        }
     </style>
 </head>
+
 <body>
+    <!--
    <div class="btn_wrap">
        <button class="btn"><img src="img/slider/btn_off.png" alt=""></button>
        <button class="btn"><img src="img/slider/btn_off.png" alt=""></button>
        <button class="btn"><img src="img/slider/btn_off.png" alt=""></button>
    </div>
-    <script>
+-->
+    <div class="item">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <!--<script>
         $('.btn').on('click',function(e){
            var $this = $(this);
             
@@ -38,6 +72,19 @@
             
             
         });
+    </script>-->
+
+    <script>
+        var itemLi = $('.item>ul>li');
+        var idx = 0;
+
+        function fadeAuto(e) {
+            idx++;
+
+            itemLi.eq(idx).addClass('on').siblings().addClass('off').removeClass('on');
+        }
+
+        setInterval(fadeAuto, 2000);
     </script>
 </body>
 </html>
