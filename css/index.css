@@ -678,7 +678,7 @@
 
 }
 
-.event_gnb .play_btn .play {
+.event_gnb_left .play_btn .play {
     width: 29px;
     height: 28px;
     background: url(../img/main_kv_banner/slider-controller-play.png) no-repeat 50%;
@@ -688,7 +688,7 @@
     display: none;
 }
 
-.event_gnb .play_btn .stop {
+.event_gnb_left .play_btn .stop {
     width: 29px;
     height: 28px;
     background: url(../img/main_kv_banner/slider-controller-stop.png) no-repeat 50%;
@@ -697,7 +697,7 @@
     left: 45%;
 }
 
-.event_gnb .event_btn {
+.event_gnb_left .event_btn {
     margin: 0 auto;
     width: 179px;
     position: absolute;
@@ -705,9 +705,45 @@
     left: 50%;
 }
 
-.event_gnb .event_btn ul li {
+.event_gnb_right .event_btn {
+    margin: 0 auto;
+    width: 179px;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+}
+
+.event_gnb_right .play_btn .play {
+    width: 29px;
+    height: 28px;
+    background: url(../img/main_kv_banner/slider-controller-play.png) no-repeat 50%;
+    position: absolute;
+    top: 0;
+    left: 45%;
+    display: none;
+}
+
+.event_gnb_right .play_btn .stop {
+    width: 29px;
+    height: 28px;
+    background: url(../img/main_kv_banner/slider-controller-stop.png) no-repeat 50%;
+    position: absolute;
+    top: 0;
+    left: 45%;
+}
+
+.event_gnb_left .event_btn ul li {
     margin: 0 auto;
     float: left;
+    width: 29px;
+    height: 15px;
+    /*background: url(../img/main_kv_banner/slider-pager-normal-shadow.png) no-repeat;*/
+    z-index: 9;
+}
+
+.event_gnb_right .event_btn ul li {
+    margin: 0 auto;
+    float: right;
     width: 29px;
     height: 15px;
     /*background: url(../img/main_kv_banner/slider-pager-normal-shadow.png) no-repeat;*/
